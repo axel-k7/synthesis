@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bpgt7ghfjfpsc"]
+
+[ext_resource type="Script" uid="uid://dm1v5a0l0er4t" path="res://addons/synthesis/ui/connection_window.gd" id="1_4y2wl"]
+
+[node name="HostWindow" type="Control" unique_id=1965279792]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4y2wl")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=405112504]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16470589, 0.4627451, 0.6784314, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect" unique_id=1112337915]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/HBoxContainer" unique_id=1338179588]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ColorRect/HBoxContainer/HBoxContainer" unique_id=604224907]
+layout_mode = 2
+text = "CONNECTED:"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect/HBoxContainer/HBoxContainer" unique_id=2040282900]
+layout_mode = 2
+text = "NO"
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/HBoxContainer" unique_id=998068583]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/HBoxContainer/VBoxContainer" unique_id=1724990209]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ColorRect/HBoxContainer/VBoxContainer/HBoxContainer" unique_id=2074490151]
+layout_mode = 2
+text = "IP:"
+
+[node name="TextEdit" type="TextEdit" parent="ColorRect/HBoxContainer/VBoxContainer/HBoxContainer" unique_id=2048333952]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ColorRect/HBoxContainer/VBoxContainer" unique_id=1427602141]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="ColorRect/HBoxContainer/VBoxContainer/HBoxContainer2" unique_id=366322745]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "CONNECT"
+
+[node name="Button2" type="Button" parent="ColorRect/HBoxContainer/VBoxContainer/HBoxContainer2" unique_id=1861839082]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "DISCONNECT"
